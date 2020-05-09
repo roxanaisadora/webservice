@@ -2,7 +2,6 @@
 __pycache__/
 # Configuracion de configuración de vscode
 .vscode
-
 # BD sqlLite
 *.db
 .env
