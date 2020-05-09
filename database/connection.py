@@ -2,7 +2,6 @@ from utils.environment import Environment
 
 # Se genera la clase DBConnection para la proteccion de la base de datos a usar
 class DBConnection(Environment):
-
     def __init__(self):
         # Variables de Entorno de la conexión a la BD
         self.__HOST     = ""
@@ -10,7 +9,6 @@ class DBConnection(Environment):
         self.__PWD      = ""
         self.__PORT     = ""
         self.__DATABASE = ""
-
 
         # Variables de Entorno de configuración SQLAlchemy
         sqlAlchemy = self.settingsSQLAlchemy()
@@ -34,7 +32,6 @@ class DBConnection(Environment):
             "SQLLITE"   : self.__sqlLite(),
             "MYSQL"     : self.__mysql(),
         }
-
         return dbConnection[nameBD]
 
     def __sqlLite(self):

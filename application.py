@@ -6,7 +6,6 @@ from controllers.controllerUsuario import UsuarioController, UsuarioPostControll
 from controllers.userController import UserPostController
 from controllers.loginController import LoginController
 
-
 usuario = api.namespace('api', description='Usuario API')
 usuario.add_resource(UsuarioPostController, '/usuario')
 usuario.add_resource(UsuarioController, '/usuario/<int:id>')
@@ -21,6 +20,6 @@ user.add_resource(UserPostController, '/user')
 login = api.namespace('api', description='Login API')
 login.add_resource(LoginController, '/login')
 
-
 if __name__ == "__main__":
   	app.run()
+
