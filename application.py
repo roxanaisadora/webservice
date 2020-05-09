@@ -23,4 +23,4 @@ login.add_resource(LoginController, '/login')
 
 
 if __name__ == "__main__":
-  	app.run(port=config['PORT'], debug=config['DEBUG'])
+  	app.run()
