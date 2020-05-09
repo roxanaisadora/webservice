@@ -21,5 +21,5 @@ login = api.namespace('api', description='Login API')
 login.add_resource(LoginController, '/login')
 
 if __name__ == "__main__":
-      	app.run()
+      	app.run(port=config['PORT'], debug=config['DEBUG'])
 
