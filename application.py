@@ -20,4 +20,7 @@ user.add_resource(UserPostController, '/user')
 login = api.namespace('api', description='Login API')
 login.add_resource(LoginController, '/login')
 
+if __name__ == "__main__":
+      	app.run()
+
 #cambios realizados para demostracion el app service
