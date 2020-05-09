@@ -5,6 +5,13 @@ from models import *
 from controllers.controllerUsuario import UsuarioController, UsuarioPostController, EstadoController, UsuarioNombreController, UsuarioMostraidController, UsuarioMostrarestadoController
 from controllers.userController import UserPostController
 from controllers.loginController import LoginController
+  
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+  return 'Hey its Python Flask application!'
 
 
 usuario = api.namespace('api', description='Usuario API')
